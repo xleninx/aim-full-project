@@ -1,5 +1,6 @@
-PATH
-  remote: /Users/leninluque/Documents/apps/aim-test
+GIT
+  remote: git://github.com/xleninx/aim-test.git
+  revision: 3ef74b7c48adc41b13bfe66ea1fdb3682876af95
   specs:
     domain_status (0.0.1)
       rails (~> 4.2.4)

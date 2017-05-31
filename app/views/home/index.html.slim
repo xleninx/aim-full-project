@@ -1,0 +1,19 @@
+.container
+  .jumbotron.form-checker
+    h1 Domain Status Checker
+
+    p
+      | With this application you can know the 
+      strong  HTTP STATUS 
+      |  of any domain you want to consult
+
+    hr
+    form.form-horizontal action="/domain_status/by_domain" method="get"
+      .form-group
+        label.col-sm-2.control-label for='domain' Insert Domain:
+        .col-sm-10
+          input#domain.form-control required='true' name="domain" type="text" pattern="^(www\.)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$" placeholder="www.google.cl"
+
+      .form-group
+        .col-sm-offset-2.col-sm-10
+          button type="submit" class="btn btn-default" Send Request
